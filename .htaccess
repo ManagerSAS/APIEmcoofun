@@ -1,0 +1,20 @@
+
+RewriteEngine on
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home2/agencia8/app.losolivosvillavicencio.com"
+PassengerBaseURI "/"
+PassengerNodejs "/home2/agencia8/nodevenv/app.losolivosvillavicencio.com/10/bin/node"
+PassengerAppType node
+PassengerStartupFile index.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
+RewriteCond %{HTTP_HOST} ^app\.losolivosvillavicencio\.com$
+RewriteRule ^/?$ "https\:\/\/app\.losolivosvillavicencio\.com\/" [R=301,L]
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>

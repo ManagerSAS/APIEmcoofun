@@ -1,0 +1,29 @@
+novedades empresariales formulario para enviar correo
+
+{
+    "company": "agencia manager",
+    "email": "juan@gmail.com",        
+    "nameFuncionary":"juan manuel camacho naranjo",
+    "workCenter": "",
+    "files": [],
+    "listNovelty":[
+        {
+            "date":"1998-05-19",
+            "id":"1121951350",
+            "month":"Enero",
+            "name":"angie villegas reyes",
+            "novelty":"Retiro",
+            "phone":"3223821204",
+            "typeId":"C.C"
+        },
+        {
+            "date":"1998-05-19",
+            "id":"1121951350",
+            "month":"Enero",
+            "name":"angie villegas reyes",
+            "novelty":"Retiro",
+            "phone":"3223821204",
+            "typeId":"C.C"
+        }
+    ]
+} 
